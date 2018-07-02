@@ -10,12 +10,13 @@
     },
     "version": "1.0.0",
     "license": "BSD-3-Clause",
+    "export": {
         "exclude": [
-            "*.avx2.*.cpp",
-            "*.fp16.*.cpp",
-            "*.sse4_1.*.cpp",
-            "cuda_*.cpp",
-            "gl_*.cpp"
+            "*/*/*/*.avx2.*.cpp",
+            "*/*/*/*.fp16.*.cpp",
+            "*/*/*/*.sse4_1.*.cpp",
+            "*/*/*/cuda_*.cpp",
+            "*/*/*/gl_*.cpp"
         ],
         "include": [
             "modules/calib3d/src/*.[ch]pp",
@@ -26,7 +27,8 @@
             "modules/features2d/include/*.[ch]pp",
             "modules/imgproc/src/*.[ch]pp",
             "modules/imgproc/include/*.[ch]pp"
-        ],
+        ]
+    },
 
     "build": {
         "flags": [
