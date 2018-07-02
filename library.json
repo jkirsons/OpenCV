@@ -4,10 +4,7 @@
   "keywords": "opencv",
   "frameworks": "arduino",
   "platforms": "*",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/opencv/opencv.git"
-  },
+  "downloadURL": "https://github.com/opencv/opencv/archive/master.zip",
   "export": {
     "exclude": [
       "*/*/*/*.avx2.*.cpp",
