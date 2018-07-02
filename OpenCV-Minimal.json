@@ -10,7 +10,6 @@
     },
     "version": "1.0.0",
     "license": "BSD-3-Clause",
-    "export": {
         "exclude": [
             "*.avx2.*.cpp",
             "*.fp16.*.cpp",
@@ -27,8 +26,7 @@
             "modules/features2d/include/*.[ch]pp",
             "modules/imgproc/src/*.[ch]pp",
             "modules/imgproc/include/*.[ch]pp"
-        ]
-    },
+        ],
 
     "build": {
         "flags": [
