@@ -1,24 +1,41 @@
 {
-    "name": "OpenCV",
-    "description": "OpenCV Library for ESP32",
-    "keywords": "opencv",
-    "frameworks": "arduino",
-    "platforms": "*",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/opencv/opencv.git"
-    },
-
-    "build": {
-        "flags": [
-            "-Ddefine=1",
-            "-Wp,-Os,-ffunction-sections,-fdata-sections,-fno-exceptions,-flto",
-            "-Wl,--gc-sections,-flto"
-        ]
-    },
-
-    "dependencies": [{
-        "name": "OpenCL",
-        "version": "https://github.com/KhronosGroup/OpenCL-Headers.git"
-    }]
+  "name": "OpenCV",
+  "description": "OpenCV Library for ESP32",
+  "keywords": "opencv",
+  "frameworks": "arduino",
+  "platforms": "*",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opencv/opencv.git"
+  },
+  "export": {
+    "exclude": [
+      "*/*/*/*.avx2.*.cpp",
+      "*/*/*/*.fp16.*.cpp",
+      "*/*/*/*.sse4_1.*.cpp",
+      "*/*/*/cuda_*.cpp",
+      "*/*/*/gl_*.cpp"
+    ],
+    "include": [
+      "modules/calib3d/src/*.[ch]pp",
+      "modules/calib3d/include/*.[ch]pp",
+      "modules/core/src/*.[ch]pp",
+      "modules/core/include/*.[ch]pp",
+      "modules/features2d/src/*.[ch]pp",
+      "modules/features2d/include/*.[ch]pp",
+      "modules/imgproc/src/*.[ch]pp",
+      "modules/imgproc/include/*.[ch]pp"
+    ]  
+  },
+  "build": {
+    "flags": [
+      "-Ddefine=1",
+      "-Wp,-Os,-ffunction-sections,-fdata-sections,-fno-exceptions,-flto",
+      "-Wl,--gc-sections,-flto"
+    ]
+  },
+  "dependencies": {
+    "name": "OpenCL",
+    "version": "https://github.com/KhronosGroup/OpenCL-Headers.git"
+  }
 }
