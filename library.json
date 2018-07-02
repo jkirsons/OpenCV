@@ -5,6 +5,7 @@
   "frameworks": "arduino",
   "platforms": "*",
   "downloadUrl": "https://github.com/opencv/opencv/archive/master.zip",
+  "version": "1.0",
   "export": {
     "exclude": [
       "*/*/*/*.avx2.*.cpp",
