@@ -4,8 +4,10 @@
   "keywords": "opencv",
   "frameworks": "arduino",
   "platforms": "*",
-  "downloadUrl": "https://github.com/opencv/opencv/archive/master.zip",
-  "version": "1.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opencv/opencv.git"
+  },
   "export": {
     "exclude": [
       "*/*/*/*.avx2.*.cpp",
