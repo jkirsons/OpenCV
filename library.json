@@ -8,25 +8,6 @@
         "type": "git",
         "url": "https://github.com/opencv/opencv.git"
     },
-    "export": {
-        "exclude": [
-            "*/*/*/*.avx2.*.cpp",
-            "*/*/*/*.fp16.*.cpp",
-            "*/*/*/*.sse4_1.*.cpp",
-            "*/*/*/cuda_*.cpp",
-            "*/*/*/gl_*.cpp"
-        ],
-        "include": [
-            "modules/calib3d/src/*.[ch]pp",
-            "modules/calib3d/include/*.[ch]pp",
-            "modules/core/src/*.[ch]pp",
-            "modules/core/include/*.[ch]pp",
-            "modules/features2d/src/*.[ch]pp",
-            "modules/features2d/include/*.[ch]pp",
-            "modules/imgproc/src/*.[ch]pp",
-            "modules/imgproc/include/*.[ch]pp"
-        ]
-    },
 
     "build": {
         "flags": [
