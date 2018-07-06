@@ -15,6 +15,12 @@
             "-D CV_CPU_BASELINE_FEATURES=0",
             "-I core/include",
             "-I core/src",
+            "-I calib3d/include",
+            "-I calib3d/src",
+            "-I features2d/include",
+            "-I features2d/src",
+            "-I imgproc/include",
+            "-I imgproc/src",            
             "-I opencv2"
         ]
     },
