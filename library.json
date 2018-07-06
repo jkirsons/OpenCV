@@ -13,7 +13,7 @@
             "-D __OPENCV_BUILD",
             "-D CV_CPU_DISPATCH_MODES_ALL=BASELINE",
             "-D CV_CPU_BASELINE_FEATURES=0",
-            "-I core/include/opencv2",
+            "-I core/include",
             "-I core/src",
             "-I opencv2"
         ]
