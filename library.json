@@ -1,39 +1,23 @@
 {
     "name": "OpenCV",
+    "version": "1.0.1",
     "description": "OpenCV Library for ESP32",
     "keywords": "opencv",
     "repository": {
         "type": "git",
         "url": "https://github.com/opencv/opencv.git"
     },
-    "version": "1.0.0",
     "license": "BSD-3-Clause",
-    "export": {
-        "exclude": [
-            "*.avx2.*.cpp",
-            "*.fp16.*.cpp",
-            "*.sse4_1.*.cpp",
-            "cuda_*.cpp",
-            "gl_*.cpp"
-        ],
-        "include": [
-            "calib3d/src/*.[ch]pp",
-            "calib3d/include/*.[ch]pp",
-            "core/src/*.[ch]pp",
-            "core/include/*.[ch]pp",
-            "features2d/src/*.[ch]pp",
-            "features2d/include/*.[ch]pp",
-            "imgproc/src/*.[ch]pp",
-            "imgproc/include/*.[ch]pp"
-        ]
-    },
-
     "build": {
         "flags": [
-            "-Ddefine=1"
+            "-D __OPENCV_BUILD",
+            "-D CV_CPU_DISPATCH_MODES_ALL=BASELINE",
+            "-D CV_CPU_BASELINE_FEATURES=0",
+            "-I core/include/opencv2",
+            "-I core/src",
+            "-I opencv2"
         ]
     },
-
     "dependencies": [{
         "name": "OpenCL",
         "version": "https://github.com/KhronosGroup/OpenCL-Headers.git"
