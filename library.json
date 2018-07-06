@@ -3,10 +3,6 @@
     "version": "1.0.1",
     "description": "OpenCV Library for ESP32",
     "keywords": "opencv",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/opencv/opencv.git"
-    },
     "license": "BSD-3-Clause",
     "build": {
         "flags": [
@@ -27,5 +23,9 @@
     "dependencies": [{
         "name": "OpenCL",
         "version": "https://github.com/KhronosGroup/OpenCL-Headers.git"
+    },
+    {
+        "name": "zlib-PIO",
+        "version": "https://github.com/jkirsons/zlib-PIO.git"
     }]
 }
