@@ -16,7 +16,9 @@
             "-I features2d/include",
             "-I features2d/src",
             "-I imgproc/include",
-            "-I imgproc/src",            
+            "-I imgproc/src",         
+            "-I objdetect/include",
+            "-I objdetect/src",                  
             "-I opencv2"
         ]
     },
