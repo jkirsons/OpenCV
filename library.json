@@ -19,7 +19,8 @@
             "-I imgproc/src",         
             "-I objdetect/include",
             "-I objdetect/src",                  
-            "-I opencv2"
+            "-I opencv2",
+            "-include core/include/opencv2/core/opencl/ocl_defs.hpp"
         ]
     },
     "dependencies": [{
