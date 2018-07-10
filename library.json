@@ -16,9 +16,13 @@
             "-I features2d/include",
             "-I features2d/src",
             "-I imgproc/include",
-            "-I imgproc/src",         
+            "-I imgproc/src",
+            "-I ximgproc/include",
+            "-I ximgproc/src",
             "-I objdetect/include",
-            "-I objdetect/src",                  
+            "-I objdetect/src",
+            "-I xobjdetect/include",
+            "-I xobjdetect/src",                
             "-I opencv2",
             "-include core/include/opencv2/core/opencl/ocl_defs.hpp"
         ]
