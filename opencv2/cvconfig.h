@@ -78,7 +78,7 @@
 //#define HAVE_EIGEN
 
 /* FFMpeg video library */
-#define HAVE_FFMPEG
+//#define HAVE_FFMPEG
 
 /* Geospatial Data Abstraction Library */
 //#define HAVE_GDAL
@@ -116,7 +116,7 @@
 #define HAVE_JPEG
 
 /* libpng/png.h needs to be included */
-#define HAVE_LIBPNG_PNG_H
+//#define HAVE_LIBPNG_PNG_H
 
 /* GDCM DICOM codec */
 //#define HAVE_GDCM
@@ -139,7 +139,7 @@
 //#define HAVE_OPENCL_SVM
 
 /* OpenEXR codec */
-#define HAVE_OPENEXR
+//#define HAVE_OPENEXR
 
 /* OpenGL support*/
 //#define HAVE_OPENGL
