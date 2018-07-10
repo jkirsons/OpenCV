@@ -22,7 +22,9 @@
             "-I objdetect/include",
             "-I objdetect/src",
             "-I xobjdetect/include",
-            "-I xobjdetect/src",                
+            "-I xobjdetect/src",
+            "-I imgcodecs/include",
+            "-I imgcodecs/src",             
             "-I opencv2",
             "-include core/include/opencv2/core/opencl/ocl_defs.hpp"
         ]
