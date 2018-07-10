@@ -223,7 +223,7 @@ bool  BmpDecoder::readData( Mat& img )
         }
         _bgr.allocate(m_width*3 + 32);
     }
-    uchar *src = _src.data(), *bgr = _bgr.data();
+    uchar *src = _src, *bgr = _bgr;
 
     CV_TRY
     {
@@ -490,7 +490,7 @@ decode_rle8_bad: ;
             result = true;
             break;
         default:
-            CV_Error(cv::Error::StsError, "Invalid/unsupported mode");
+            CV_ErrorNoReturn(cv::Error::StsError, "Invalid/unsupported mode");
         }
     }
     CV_CATCH_ALL
