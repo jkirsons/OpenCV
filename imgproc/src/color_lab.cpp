@@ -1135,7 +1135,7 @@ static const float *sRGBInvGammaTab = 0;
 static const float GammaTabScale((int)GAMMA_TAB_SIZE);
 
 static ushort sRGBGammaTab_b[256], linearGammaTab_b[256];
-enum { inv_gamma_shift = 12, INV_GAMMA_TAB_SIZE = (1 << inv_gamma_shift) };
+enum { inv_gamma_shift = 1, INV_GAMMA_TAB_SIZE = (1 << inv_gamma_shift) };
 static ushort sRGBInvGammaTab_b[INV_GAMMA_TAB_SIZE], linearInvGammaTab_b[INV_GAMMA_TAB_SIZE];
 #undef lab_shift
 #define lab_shift xyz_shift
@@ -1149,7 +1149,7 @@ static const bool enableRGB2LabInterpolation = true;
 static const bool enablePackedLab = true;
 enum
 {
-    lab_lut_shift = 5,
+    lab_lut_shift = 8,
     LAB_LUT_DIM = (1 << lab_lut_shift)+1,
     lab_base_shift = 14,
     LAB_BASE = (1 << lab_base_shift),

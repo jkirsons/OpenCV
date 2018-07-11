@@ -113,7 +113,7 @@
 //#define HAVE_JASPER
 
 /* IJG JPEG codec */
-#define HAVE_JPEG
+//#define HAVE_JPEG
 
 /* libpng/png.h needs to be included */
 //#define HAVE_LIBPNG_PNG_H
@@ -151,7 +151,7 @@
 //#define HAVE_OPENNI2
 
 /* PNG codec */
-#define HAVE_PNG
+//#define HAVE_PNG
 
 /* Posix threads (pthreads) */
 //#define HAVE_PTHREAD
@@ -175,7 +175,7 @@
 //#define HAVE_TBB
 
 /* TIFF codec */
-#define HAVE_TIFF
+//#define HAVE_TIFF
 
 /* Unicap video capture library */
 //#define HAVE_UNICAP

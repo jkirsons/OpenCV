@@ -57,6 +57,13 @@
 #include <limits.h>
 #include <ctype.h>
 
+#ifndef CV_ErrorNoReturn
+#define CV_ErrorNoReturn CV_Error
+#endif
+#ifndef CV_ErrorNoReturn_
+#define CV_ErrorNoReturn_ CV_Error_
+#endif
+
 #if defined _WIN32 || defined WINCE
     #include <windows.h>
     #undef small

@@ -5,6 +5,9 @@
     "keywords": "opencv",
     "license": "BSD-3-Clause",
     "build": {
+        "unflags": [
+            "-fno-rtti"
+            ],        
         "flags": [
             "-D __OPENCV_BUILD",
             "-D CV_CPU_DISPATCH_MODES_ALL=BASELINE",
